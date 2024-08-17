@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFK INTERNATIONAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #2E3440;
+            color: white;
+        }
+        #loading {
+            font-size: 24px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading...</div>
+    <script>
+        document.getElementById('loading').style.display = 'block';
+
+        setTimeout(() => {
+            document.getElementById('loading').style.display = 'none';
+            alert("DFK video app not accessible on this laptop. RTX recommendable for the professional application.");
+            window.close(); // Closes the app after the alert
+        }, 3000); // Simulate loading for 3 seconds
+    </script>
+</body>
+</html>
